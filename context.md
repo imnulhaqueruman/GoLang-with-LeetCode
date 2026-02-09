@@ -45,7 +45,7 @@ graph TD
     style D fill:#F44336,color:#fff
     style E fill:#9C27B0,color:#fff
 ```
-![alt text](image.png)
+
 ### 📝 Example: Managing Concurrent API Requests
 
 ```go
@@ -106,7 +106,7 @@ Response from https://api.example.com/orders: 200
 ```
 
 ### 🔄 Concurrent API Request Flow
-![alt text](image-1.png)
+
 ```mermaid
 sequenceDiagram
     participant Main
@@ -143,7 +143,7 @@ To create a context, you can use various functions from the context package. Eac
 
 ### 🏗️ Context Creation Methods
 
-![alt text](image-2.png)
+
 ```mermaid
 graph TB
     A[Context Creation Methods] --> B[context.Background]
@@ -209,7 +209,7 @@ Task timed out
 
 ### 🎯 Context Creation Decision Flow
 
-![alt text](image-3.png)
+
 ```mermaid
 flowchart LR
     A[Start] --> B{Need cancellation?}
@@ -244,7 +244,7 @@ Once you have a context, you can propagate it to downstream functions or gorouti
 
 ### 🌳 Context Propagation Tree
 
-![alt text](image-4.png)
+
 
 ```mermaid
 graph TD
@@ -314,7 +314,7 @@ SubTask - User ID: 123
 ```
 
 ### 🔄 Context Propagation Sequence
-![alt text](image-5.png)
+
 
 ```mermaid
 sequenceDiagram
@@ -350,7 +350,7 @@ Context allows you to retrieve values stored within it, enabling access to impor
 
 ### 🔑 Value Retrieval Flow
 
-![alt text](image-6.png)
+
 
 ```mermaid
 graph LR
@@ -417,7 +417,7 @@ Fetching data for user: 123
 
 ### 🔍 Value Storage and Retrieval Pattern
 
-![alt text](image-7.png)
+
 
 ```mermaid
 flowchart TD
@@ -452,7 +452,7 @@ Cancellation is an essential aspect of context management. It allows you to grac
 
 ### ⛔ Cancellation Propagation
 
-![alt text](image-8.png)
+
 
 ```mermaid
 graph TB
@@ -542,7 +542,7 @@ Main exiting
 ### 🔄 Cancellation Flow Sequence
 
 
-![alt text](image-9.png)
+
 ```mermaid
 sequenceDiagram
     participant Main
@@ -579,7 +579,7 @@ sequenceDiagram
 Setting timeouts and deadlines is crucial when working with context. It ensures that operations complete within a specified timeframe.
 
 ### ⏱️ Timeout Management
-![alt text](image-10.png)
+
 
 ```mermaid
 graph TD
@@ -666,7 +666,7 @@ Task-2 result: context deadline exceeded
 
 ### 📊 Timeout Execution Timeline
 
-![alt text](image-11.png)
+
 
 ```mermaid
 gantt
@@ -695,7 +695,7 @@ gantt
 Context plays a vital role in managing HTTP requests in Go, allowing you to control request cancellation, timeouts, and pass important values.
 
 ### 🌐 HTTP Request with Context
-![alt text](image-12.png)
+
 ```mermaid
 graph TB
     A[HTTP Request] --> B[Create Context with Timeout]
@@ -776,7 +776,7 @@ Error making request to https://httpbin.org/delay/3: context deadline exceeded
 ```
 
 ### 🔄 HTTP Request Flow with Context
-![alt text](image-13.png)
+
 ```mermaid
 sequenceDiagram
     participant Client
@@ -807,7 +807,7 @@ sequenceDiagram
 Context is useful when dealing with database operations, allowing you to manage query cancellations, timeouts, and pass relevant data.
 
 ### 🗄️ Database Operation Flow
-![alt text](image-14.png)
+
 ```mermaid
 graph TD
     A[Database Query] --> B[Create Context with Timeout]
@@ -903,7 +903,7 @@ func getUsersWithContext(ctx context.Context, db *sql.DB) ([]User, error) {
 ```
 
 ### 🔄 Database Query Execution Flow
-![alt text](image-15.png)
+
 
 ```mermaid
 flowchart LR
